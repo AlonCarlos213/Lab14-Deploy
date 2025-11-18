@@ -1,0 +1,6 @@
+@Lab_14___Carlos_Alonso_Mamani_HostAddress = http://localhost:5291
+
+GET {{Lab_14___Carlos_Alonso_Mamani_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

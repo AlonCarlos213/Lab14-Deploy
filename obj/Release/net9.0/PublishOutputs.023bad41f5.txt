@@ -1,0 +1,9 @@
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/publish/Lab 14 - Carlos Alonso Mamani
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/publish/appsettings.Development.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/publish/appsettings.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/publish/Lab 14 - Carlos Alonso Mamani.dll
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/publish/Lab 14 - Carlos Alonso Mamani.deps.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/publish/Lab 14 - Carlos Alonso Mamani.runtimeconfig.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/publish/Lab 14 - Carlos Alonso Mamani.pdb
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/publish/Microsoft.AspNetCore.OpenApi.dll
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/publish/Microsoft.OpenApi.dll

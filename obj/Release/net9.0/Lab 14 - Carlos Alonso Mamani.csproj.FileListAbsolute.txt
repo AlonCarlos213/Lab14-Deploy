@@ -1,0 +1,32 @@
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/appsettings.Development.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/appsettings.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/Lab 14 - Carlos Alonso Mamani.staticwebassets.endpoints.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/Lab 14 - Carlos Alonso Mamani
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/Lab 14 - Carlos Alonso Mamani.deps.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/Lab 14 - Carlos Alonso Mamani.runtimeconfig.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/Lab 14 - Carlos Alonso Mamani.dll
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/Lab 14 - Carlos Alonso Mamani.pdb
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/bin/Release/net9.0/Microsoft.OpenApi.dll
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/Lab 14 - Carlos Alonso Mamani.csproj.AssemblyReference.cache
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/rpswa.dswa.cache.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/Lab 14 - Carlos Alonso Mamani.GeneratedMSBuildEditorConfig.editorconfig
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/Lab 14 - Carlos Alonso Mamani.AssemblyInfoInputs.cache
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/Lab 14 - Carlos Alonso Mamani.AssemblyInfo.cs
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/Lab 14 - Carlos Alonso Mamani.csproj.CoreCompileInputs.cache
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/Lab 14 - Carlos Alonso Mamani.MvcApplicationPartsAssemblyInfo.cs
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/Lab 14 - Carlos Alonso Mamani.MvcApplicationPartsAssemblyInfo.cache
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/rjimswa.dswa.cache.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/rjsmrazor.dswa.cache.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/rjsmcshtml.dswa.cache.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/scopedcss/bundle/Lab 14 - Carlos Alonso Mamani.styles.css
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/staticwebassets.build.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/staticwebassets.build.json.cache
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/staticwebassets.development.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/staticwebassets.build.endpoints.json
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/Lab 14 -.CF6CDD73.Up2Date
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/Lab 14 - Carlos Alonso Mamani.dll
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/refint/Lab 14 - Carlos Alonso Mamani.dll
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/Lab 14 - Carlos Alonso Mamani.pdb
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/Lab 14 - Carlos Alonso Mamani.genruntimeconfig.cache
+/Users/carlosalonsomamaniccollque/Desktop/ProyectosRide/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/obj/Release/net9.0/ref/Lab 14 - Carlos Alonso Mamani.dll

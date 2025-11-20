@@ -8,24 +8,24 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-# Copia solo el archivo del proyecto .csproj al directorio actual (/src)
-# Render/Docker LO TIENE QUE VER, por lo que usamos la ruta relativa del repositorio.
-# El nombre del archivo es la clave: Lab 14 - Carlos Alonso Mamani.csproj
-COPY "Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani.csproj" "./Lab 14 - Carlos Alonso Mamani/"
+# 1. Copiamos la carpeta completa del proyecto (la subcarpeta anidada)
+# El primer argumento es la carpeta *dentro* de la raíz del repositorio.
+# El segundo argumento es dónde ponerla.
+# NOTA: La barra inclinada final (/) es crucial.
+COPY Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/ Lab 14 - Carlos Alonso Mamani/
 
-# Entramos en la carpeta donde está el proyecto, ya que ahí está el .csproj
-# Esta ruta debe ser la carpeta que contiene el archivo .csproj
-WORKDIR "/src/Lab 14 - Carlos Alonso Mamani"
+# 2. Entramos en la carpeta que contiene el archivo .csproj
+WORKDIR "/src/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani"
 
-# 1. Restaura (Ya estamos en el directorio correcto)
+# 3. Restaura (Ahora estamos en el directorio correcto, no necesita ruta)
 RUN dotnet restore
 
-# 2. Compila
+# 4. Compila
 COPY . .
 RUN dotnet build -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
-WORKDIR "/src/Lab 14 - Carlos Alonso Mamani"
+WORKDIR "/src/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani"
 RUN dotnet publish -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final

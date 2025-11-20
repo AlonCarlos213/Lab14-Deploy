@@ -6,28 +6,23 @@ EXPOSE 8080
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
-WORKDIR /src
+WORKDIR /app_build
 
-# PASO CLAVE: Copia el repositorio completo (TODA la carpeta de GitHub) a /src.
-# Esta es la forma más segura de manejar rutas con espacios.
+# 1. Copiamos el .csproj y los archivos de la solución
+# Usamos un nombre de archivo simple para evitar errores de sintaxis
+COPY Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani.csproj .
+COPY Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani.sln .
 COPY . .
 
-# Entramos en la carpeta anidada del proyecto (.csproj) usando comillas
-WORKDIR "/src/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani"
-
-# Restaura (Estamos en el directorio correcto, no necesita ruta)
+# 2. Restaurar, Compilar y Publicar usando el nombre del proyecto
+# Nota: Los comandos dotnet son inteligentes y usan la ruta del WORKDIR
 RUN dotnet restore
+RUN dotnet publish Lab\ 14\ -\ Carlos\ Alonso\ Mamani.csproj -c Release -o /app/out /p:UseAppHost=false
 
-# Compila
-RUN dotnet build -c $BUILD_CONFIGURATION -o /app/build
-
-FROM build AS publish
-# WORKDIR de nuevo para la fase de publicación
-WORKDIR "/src/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani"
-RUN dotnet publish -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
-# Nombre del archivo .dll generado (generalmente sin espacios)
+# Copiamos la salida final (la carpeta 'out')
+COPY --from=build /app/out .
+# El nombre de la DLL DEBE ser el nombre del proyecto original
 ENTRYPOINT ["dotnet", "Lab 14 - Carlos Alonso Mamani.dll"]

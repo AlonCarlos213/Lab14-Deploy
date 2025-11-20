@@ -2,19 +2,38 @@
 
 var builder = WebApplication.CreateBuilder(args);
 
+// *** AGREGANDO SWAGGER ***
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// Agregar el servicio de Controladores (Necesario para el Web API)
+builder.Services.AddControllers(); 
+// *** FIN DE LA CORRECCIÓN DE SERVICIOS ***
+
+
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    // *** USAR SWAGGER EN DEV ***
+    app.UseSwagger();
+    app.UseSwaggerUI();
+    
     app.MapOpenApi();
 }
 
+// Configuración para permitir HTTPS (aunque Render usa HTTP/8080)
 app.UseHttpsRedirection();
+
+// Mapear los Controladores
+app.MapControllers();
+
 
 var summaries = new[]
 {

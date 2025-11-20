@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab 14 - Carlos Alonso Mamani")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b35feb035ae5c2acd493738f048d48b49e15a213")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+723c8ba597b21b755d7da15f299785d152c8ff11")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab 14 - Carlos Alonso Mamani")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab 14 - Carlos Alonso Mamani")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

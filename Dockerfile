@@ -5,24 +5,21 @@ EXPOSE 8080
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
-WORKDIR /app_build
+WORKDIR /src
 
-# 1. Copiamos el .csproj y .sln usando rutas con comillas
-COPY "Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani.csproj" .
-COPY "Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani.sln" .
+# Copiar solución y proyecto
+COPY "Lab 14 - Carlos Alonso Mamani.sln" .
+COPY "Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani.csproj" "Lab 14 - Carlos Alonso Mamani/"
 
-# Copiamos todo el proyecto
+# Copiar el resto del código
 COPY . .
 
-# Restauramos y publicamos
+# Restaurar y publicar
 RUN dotnet restore
 RUN dotnet publish "Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani.csproj" -c Release -o /app/out /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
-
-# Copiamos la publicación
 COPY --from=build /app/out .
 
-# Ejecutamos la DLL con espacios
 ENTRYPOINT ["dotnet", "Lab 14 - Carlos Alonso Mamani.dll"]

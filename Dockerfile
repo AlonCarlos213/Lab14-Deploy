@@ -8,27 +8,26 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-# 1. Copiamos la carpeta completa del proyecto (la subcarpeta anidada)
-# El primer argumento es la carpeta *dentro* de la raíz del repositorio.
-# El segundo argumento es dónde ponerla.
-# NOTA: La barra inclinada final (/) es crucial.
-COPY Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani/ Lab 14 - Carlos Alonso Mamani/
+# PASO CLAVE: Copia el repositorio completo (TODA la carpeta de GitHub) a /src.
+# Esta es la forma más segura de manejar rutas con espacios.
+COPY . .
 
-# 2. Entramos en la carpeta que contiene el archivo .csproj
+# Entramos en la carpeta anidada del proyecto (.csproj) usando comillas
 WORKDIR "/src/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani"
 
-# 3. Restaura (Ahora estamos en el directorio correcto, no necesita ruta)
+# Restaura (Estamos en el directorio correcto, no necesita ruta)
 RUN dotnet restore
 
-# 4. Compila
-COPY . .
+# Compila
 RUN dotnet build -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
+# WORKDIR de nuevo para la fase de publicación
 WORKDIR "/src/Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani"
 RUN dotnet publish -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+# Nombre del archivo .dll generado (generalmente sin espacios)
 ENTRYPOINT ["dotnet", "Lab 14 - Carlos Alonso Mamani.dll"]

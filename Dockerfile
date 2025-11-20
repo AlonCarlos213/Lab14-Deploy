@@ -7,17 +7,26 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
+
+# Copia solo el archivo del proyecto .csproj al directorio actual (/src)
+# Render/Docker LO TIENE QUE VER, por lo que usamos la ruta relativa del repositorio.
+# El nombre del archivo es la clave: Lab 14 - Carlos Alonso Mamani.csproj
 COPY "Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani.csproj" "./Lab 14 - Carlos Alonso Mamani/"
 
-RUN dotnet restore "Lab 14 - Carlos Alonso Mamani/Lab 14 - Carlos Alonso Mamani.csproj"
-
-COPY . .
+# Entramos en la carpeta donde está el proyecto, ya que ahí está el .csproj
+# Esta ruta debe ser la carpeta que contiene el archivo .csproj
 WORKDIR "/src/Lab 14 - Carlos Alonso Mamani"
-RUN dotnet build "Lab 14 - Carlos Alonso Mamani.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+# 1. Restaura (Ya estamos en el directorio correcto)
+RUN dotnet restore
+
+# 2. Compila
+COPY . .
+RUN dotnet build -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 WORKDIR "/src/Lab 14 - Carlos Alonso Mamani"
-RUN dotnet publish "Lab 14 - Carlos Alonso Mamani.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
